@@ -18,3 +18,37 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideLefttoRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 
+@media (min-width: 1024px) {
+  .grid1 {
+    overflow: hidden;
+  }
+  
+  .grid1 > div {
+    animation: slideRightToLeft 2s infinite alternate;
+  }
+  .grid2 {
+    overflow: hidden;
+  }
+  
+  .grid2 > div {
+    animation: slideLefttoRight 2s infinite alternate;
+  }
+} */

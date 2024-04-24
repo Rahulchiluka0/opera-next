@@ -20,30 +20,33 @@ const Client = () => {
     return (
         <div className='client bg-[#009846] flex flex-col gap-7 py-24'>
             <p className='text-white text-5xl font-medium text-center'>Our <span className='font-bold'>Client</span></p>
-            <div className='grid mobile:grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-3 justify-around'>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client1} alt='client' />
+            <marquee behavior="smooth" direction="left">
+                <div className='grid1 grid mobile:grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-3 justify-around'>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client1} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client2} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client3} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client4} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client5} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client6} alt='client' />
+                    </div>
+                    <div className="bg-white px-7  rounded-xl flex items-center justify-center">
+                        <Image src={client7} alt='client' />
+                    </div>
                 </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client2} alt='client' />
-                </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client3} alt='client' />
-                </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client4} alt='client' />
-                </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client5} alt='client' />
-                </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client6} alt='client' />
-                </div>
-                <div className="bg-white px-7  rounded-xl flex items-center justify-center">
-                    <Image src={client7} alt='client' />
-                </div>
-            </div>
-            <div className='grid mobile:grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-7 justify-between'>
+            </marquee>
+            <marquee behavior="scroll" direction="right">
+            <div className='grid2  grid mobile:grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-7 justify-between'>
                 <div className="bg-white px-7 rounded-xl flex items-center justify-center">
                     <Image src={client8} alt='client' />
                 </div>
@@ -69,6 +72,7 @@ const Client = () => {
                     <Image src={client15} alt='client' />
                 </div>
             </div>
+            </marquee>
         </div>
     )
 }
